@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+body {
+  background: #fff;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  padding: 1em;
+  z-index: 1;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0b0a07;
+  font-size: 1rem;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+section {
+  padding: 4em 2em;
+}
+
+#hero {
+  text-align: center;
+  background: #f7f9f9;
+  padding-top: 6em;
+}
+
+#hero .left-col {
+  padding: 1em;
+}
+
+#hero .left-col .carousel-inner .laptop {
+  width: 100%;
+}
+
+#hero .left-col .carousel-inner .carousel-item {
+  color: #000;
+}
+
+#hero .left-col .carousel-inner .carousel-item img {
+  width: 74%;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+
+#hero .left-col .carousel-inner .carousel-item h5 {
+  margin: 0;
+  color: #f7f9f9;
+  background-color: #0b0a07;
+  opacity: 0.7;
+}
+
+#hero .right-col .btn-common {
+  background: #20272e;
+  color: #fff;
+  border: none;
+}
+
+#hero .right-col .btn-primary {
+  background: #fff;
+  color: #20272e;
+  border: 1px solid #20272e;
+}
+
+.top-row {
+  text-align: center;
+}
+
+.top-row h1 {
+  color: #0b0a07;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.top-row h2 {
+  font-size: 2em;
+}
+
+.top-row h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.top-row .subhead {
+  font-size: 1em;
+  color: #e5e5e5;
+}
+
+#whatwedo {
+  background: #20272e;
+  /*background: #5C9EAD;*/
+}
+
+#whatwedo h2 {
+  color: #fff;
+}
+
+#whatwedo li {
+  background: #fff;
+  text-align: center;
+  padding: 3em 0;
+}
+
+#whatwedo li img {
+  width: 10em;
+}
+
+#whatwedo li h4 {
+  font-size: 1.25em;
+  padding: 0.5em 0;
+  margin: 1em;
+}
+
+#whatwedo li p {
+  font-size: 0.75em;
+  padding: 0 2em;
+}
+
+#portfolio {
+  background: #fff;
+}
+
+#portfolio h2 {
+  color: #0b0a07;
+}
+
+#portfolio .item {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#portfolio .item img {
+  width: 100%;
+}
+
+#portfolio .item:hover {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+#clients {
+  background: #f7f9f9;
+}
+
+#clients .row {
+  -webkit-filter: grayscale(99%);
+          filter: grayscale(99%);
+}
+
+#clients img {
+  height: 5em;
+  margin-top: 2em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 9;
+  width: 66%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  display: block;
+  text-align: right;
+  padding: .5em;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #f7f9f9;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  color: #f7f9f9;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-exit, .mobile-menu {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px auto;
+        grid-template-columns: 200px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: #0b0a07;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav a:hover {
+    font-weight: bold;
+    color: #0b0a07;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
